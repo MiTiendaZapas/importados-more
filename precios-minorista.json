@@ -1,0 +1,135 @@
+{
+  "_ayuda": [
+    "Precios de Importadoos more (tienda al público con precio por mayor desde 3 pares).",
+    "Por unidad: zapatillas $45.000, ojotas $38.000, Jordan 11 $62.000.",
+    "Por mayor (3 o más pares surtidos): $44.000, salvo los modelos que en L.A IMP salen $42.000 por mayor, que quedan a $45.000 (sin descuento). Ojotas y Jordan 11 igual que por unidad.",
+    "Las reglas por mayor copian el orden de precios-mayorista.json de L.A IMP: si allí cambia un modelo de $42.000, hay que copiarlo acá.",
+    "Gana la PRIMERA regla que coincide, de arriba hacia abajo."
+  ],
+  "wholesale": {
+    "minPairs": 3,
+    "label": "Llevando 3 o más pares surtidos"
+  },
+  "unit": {
+    "default": 45000,
+    "rules": [
+      {
+        "price": 62000,
+        "contains": [
+          "jordan 11",
+          "retro 11"
+        ]
+      },
+      {
+        "price": 38000,
+        "startsWith": [
+          "mind "
+        ]
+      },
+      {
+        "price": 38000,
+        "contains": [
+          "ojota"
+        ]
+      }
+    ]
+  },
+  "wholesalePrice": {
+    "default": 44000,
+    "rules": [
+      {
+        "price": 62000,
+        "contains": [
+          "jordan 11",
+          "retro 11"
+        ]
+      },
+      {
+        "price": 38000,
+        "startsWith": [
+          "mind "
+        ]
+      },
+      {
+        "price": 38000,
+        "contains": [
+          "ojota"
+        ]
+      },
+      {
+        "price": 45000,
+        "contains": [
+          "brillo"
+        ]
+      },
+      {
+        "price": 44000,
+        "contains": [
+          "niño",
+          "niños"
+        ]
+      },
+      {
+        "price": 44000,
+        "contains": [
+          "jordan low pink",
+          "jordan pink low"
+        ]
+      },
+      {
+        "price": 45000,
+        "contains": [
+          "nike v5 blancas",
+          "nike v5 negras",
+          "nike v5 rosa",
+          "air jordan pipa gris",
+          "air jordan black",
+          "new balance 4000 negra",
+          "nb 4000 negra"
+        ]
+      },
+      {
+        "price": 45000,
+        "contains": [
+          "forum verde summer",
+          "jordan low 1 diamond",
+          "jordan diamond pipa blanca",
+          "jordan pink",
+          "adidas 2000",
+          "puma 180",
+          "campus",
+          "shox",
+          "tl1",
+          "haylan",
+          "samba tejida",
+          "samba brillitos",
+          "super star total black"
+        ]
+      },
+      {
+        "price": 44000,
+        "contains": [
+          "exclusivas white",
+          "negras medias",
+          "air force con medias"
+        ]
+      },
+      {
+        "price": 44000,
+        "contains": [
+          "samba classic",
+          "jordan low glister",
+          "jordan",
+          "retro 4",
+          "botitas",
+          "530",
+          "9060",
+          "abzorb",
+          "running",
+          "mind"
+        ]
+      }
+    ]
+  },
+  "overrides": {}
+}
